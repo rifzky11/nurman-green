@@ -84,8 +84,58 @@
       </div>
     </section>
 
+    <section class="contact">
+      <h2>Get In Touch!</h2>
+      <div class="contact-card">
+        <form action="">
+          <div class="form-group">
+            <label for="nama">Nama</label>
+            <input
+              type="text"
+              name="nama"
+              id="nama"
+              placeholder="Nama lengkap Anda"
+              required
+            />
+            <p id="validasiNama"></p>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Alamat email aktif"
+              required
+            />
+            <p id="validasiEmail"></p>
+          </div>
+
+          <div class="form-group">
+            <label for="pesan">Pesan</label>
+            <textarea
+              name="pesan"
+              id="pesan"
+              placeholder="Tulis pesan Anda di sini..."
+              rows="5"
+              required
+            ></textarea>
+            <p id="validasiPesan"></p>
+          </div>
+
+          <button type="button" class="btn-submit" onclick="kirimPesan()">
+            Kirim Pesan
+          </button>
+        </form>
+        <p id="status"></p>
+      </div>
+    </section>
+
     <footer>
       <p>© 2026 NurmanGreen</p>
     </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>
